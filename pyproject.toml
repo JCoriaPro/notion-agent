@@ -1,14 +1,17 @@
-[project]
-name = "repl-nix-workspace"
+[tool.poetry]
+name = "notion-agent"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.11"
-dependencies = [
-    "email-validator>=2.2.0",
-    "flask>=3.1.1",
-    "flask-sqlalchemy>=3.1.1",
-    "gunicorn>=23.0.0",
-    "notion-client>=2.3.0",
-    "psycopg2-binary>=2.9.10",
-    "requests>=2.32.3",
-]
+description = "A Notion-powered assistant"
+authors = ["JCoriaPro <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.0"
+openai = "^1.0.0"
+requests = "^2.31.0"
+notion-client = "^2.2.0"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
